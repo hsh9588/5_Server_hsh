@@ -14,7 +14,7 @@ import edu.kh.jsp.student.model.service.StudentService;
 import edu.kh.jsp.student.model.vo.Student;
 
 @WebServlet("/student/selectDept")
-public class SelectDepartment extends HttpServlet {
+public class SelectDeptServlet extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

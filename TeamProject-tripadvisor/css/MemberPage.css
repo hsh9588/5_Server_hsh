@@ -1,50 +1,83 @@
+/* 공용 바디 설정값 */
+body{
+    width: 1200px;
+    margin: auto;
+    height: 200vh;
+    background-color: gray;
+}
+
+
+/* 네비게이션 메뉴 설정값 */
+
 nav{
-    height: 50px;
-    border-bottom: 2px solid black;
-
-    position: sticky;
-    /* 화면 밖으로 요소가 벗어 났을 때 지정된 위치에 고정 */
-
-    /* 어디 고정할 지 지정 */
-    top: 0;
-
-    background-color: white;
+    height: 42px;
     display: flex;
+    margin: 0 89.5px;
+    padding: 0 24px;
+
+    top: 0;
+    background-color: white;
 }
 
 nav > ul{
     margin: 0;
     padding: 0;
-    list-style: none; /* li 태그 앞에 점 삭제 */
+    list-style: none;
 
     display: flex;
     height: 100%;
 }
 
-nav li{
-    flex-basis: 150px;
+nav  span{
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+
+nav li, nav  span{
+    padding: 0 12px;
 }
 
 nav li > a{
-    text-decoration: none; /* 밑줄 없애기 */
+    text-decoration: none;
     font-size: 14px;
-    /* font-weight: bold; */
     color: black;
-
-    display: block;
-    height: 100%;
-        /* 세로 가로 */
-    padding: 0px 12px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* 내부에 작성된 글자를 요소로 취급해서 정가운데 배치 */
-
-    border-radius: 5px;
-    transition-duration: 0.1s;
+    line-height: 42px;
 }
 
-nav li > a{
+nav li > a:hover{
+    color: green;
+}
 
+nav  span:hover{
+    color: green;
+    cursor: pointer;
+}
+
+/* 회원 정보 */
+
+#user-image{
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.ui-container{
+    margin: 0 41.5px;
+    padding: 24px 24px 0px 24px;
+    background-color: gray;
+
+}
+
+.ui-container-table{
+    padding: 24px 24px 0px 24px;
+    background-color: white;
+}
+
+.ui-container-left{
+    display: ;
 }

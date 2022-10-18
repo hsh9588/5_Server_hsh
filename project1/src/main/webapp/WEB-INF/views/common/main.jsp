@@ -44,16 +44,26 @@
                     
                                 <fieldset id="id-pw-area">
                                     <section>
-                                        <input type="text" name="inputEmail" placeholder="이메일" autocomplete="off">
+                                        <input type="text" name="inputEmail" placeholder="이메일" 
+                                        autocomplete="off" value="${cookie.saveId.value}">
+                                                            <%-- 쿠키 중 saveId에 저장된 값 --%>
                                         <input type="password" name="inputPw" placeholder="비밀번호">
                                     </section>
                                     <section>
                                         <button>로그인</button>
                                     </section>
                                 </fieldset>
-                    
+
+                                <%-- 쿠키에 saveId가 있을 경우 --%>
+                                <c:if test="${!empty cookie.saveId.value}">
+                                    <%-- temp 변수 선언 --%>
+                                    <c:set var="temp" value="checked" />
+                                    <%-- page scope == page 어디서든 사용 가능 
+                                                    == if문 나가도 쓸 수 있다. --%>
+                                </c:if>
+
                                 <label>
-                                    <input type="checkbox" name="saveId"> 아이디 저장
+                                    <input type="checkbox" name="saveId" ${temp}> 아이디 저장
                                 </label>
                     
                                 <article id="signUp-find-area">

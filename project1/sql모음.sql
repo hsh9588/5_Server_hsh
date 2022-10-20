@@ -268,6 +268,13 @@ AND MEMBER_PW = 'pass01!';
 
 SELECT * FROM "MEMBER";
 
+-- 회원 정보 수정
+UPDATE "MEMBER" SET
+MEMBER_NICKNAME = '변경',
+MEMBER_TEL = '변경',
+MEMBER_ADDRESS = '변경,,변경,,변경'
+WHERE MEMBER_NO = 4;
+
 
 
 

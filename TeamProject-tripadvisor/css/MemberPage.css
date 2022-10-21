@@ -12,7 +12,7 @@ body{
 nav{
     height: 42px;
     display: flex;
-    margin: 0 89.5px;
+    margin: 0;
     padding: 0 24px;
 
     top: 0;
@@ -57,27 +57,22 @@ nav  span:hover{
     cursor: pointer;
 }
 
-/* 회원 정보 */
+/* 회원 정보 페이지*/
 
-#user-image{
-    width: 118px;
-    height: 118px;
-    border-radius: 50%;
-    border: 1px solid white;
+.profile-page{
+    height: 2000px;
+    background-color: coral;
 }
 
-.ui-container{
-    margin: 0 41.5px;
-    padding: 24px 24px 0px 24px;
+.profile-page > div{
+    height: 138px;
+    margin: 0;
     background-color: gray;
-
+    padding: 24px 24px 0 24px;
 }
 
-.ui-container-table{
-    padding: 24px 24px 0px 24px;
+.profile-page-container > div{
+    height: 126px;
     background-color: white;
-}
-
-.ui-container-left{
-    display: ;
+    bottom: 0;
 }

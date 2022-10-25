@@ -7,30 +7,193 @@
     <title>회원페이지</title>
 
     <link rel="stylesheet" href="css/MemberPage.css">
+    <link rel="stylesheet" href="css/header.css">
+
+
     <script src="https://kit.fontawesome.com/313744e228.js" crossorigin="anonymous"></script>
+    <script src="../TeamProject-tripadvisor/scrypt/header-search.js"></script>
 
 </head>
 <body>
-    <main>
-        <nav class="ui-tabs">
-            <ul>
-                <li><a href="#">호텔</a></li>
-                <li><a href="#">즐길거리</a></li>
-                <li><a href="#">음식점</a></li>
-                <li><a href="#">항공권</a></li>
-                <li><a href="#">항공+호텔 패키지</a></li>
-                <li><a href="#">크루즈</a></li>
-            </ul>
-            <span><i class="fa-solid fa-ellipsis"></i></span>
-        </nav>
 
-        <div class="profile-page">
-            <div class="profile-page-container">
-                <div>
-                    
+    <div class="BC-style"></div>
+    <header>
+        <div class="left-column">
+            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="" width="200px">
+        </div>
+
+        <div class="header-search">
+            <form action="#" class="search-form">
+                <div class="search-input-box">
+                    <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                    <input id="search-input" type="search" placeholder="어디로 가시나요?" name="searchKeyword" autocomplete="off">
+                </div>
+                <div class="search-keyword-area">
+                    <a href="#">
+                        <i class="fa-solid fa-location-arrow"></i>
+                        <span>주변</span>
+                    </a>
+                    <label class="search-keyword-title">인기 검색어</label>
+                    <ol class="popular-keyword-list">
+                        <!-- <a href="">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>라스베이거스</span>
+                        </a>
+                        <hr>
+                        <a href="">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>서울</span>
+                        </a>
+                        <hr>
+                        <a href="">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>동대문</span>
+                        </a>
+                        <hr>
+                        <a href="">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>부산 해운대</span>
+                        </a> -->
+                    </ol>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="right-column">
+            <ul class="header-nav">
+                <li><a href="프로필페이지/리뷰"><i class="fa-solid fa-pen"></i>리뷰</a></li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i>알림</a></li>
+            </ul>
+
+            <!-- 로그아웃 상태라면 -->
+            <!-- <a href="로그인 페이지로 이동" class="header-login">로그인</a> -->
+            
+            <!-- 로그인 상태라면 -->
+            <div class="profile-img">
+                <label for="header-menu-toggle">
+                    <img src="../TeamProject-tripadvisor/image/user.png" alt="프로필 이미지">
+                </label>
+                <input type="checkbox" id="header-menu-toggle">
+                <div class="top-down-menu">
+                    <ul>
+                        <li><a href="내정보 확인 이동">내 정보</a></li>
+                        <li><a href="프로필 페이지 이동">마이 프로필</a></li>
+                        <li><a href="로그아웃페이지 이동">로그아웃</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </main>
+    </header>
+    <div class="blur-box"></div>
+    <!-- 회원 정보 페이지 검색창 하단 메뉴 시작 부분 -->
+    <div class="user-header-bottom-style">
+        <nav class="user-header-bottom-layout">
+            <a href="#">호텔</a>
+            <a href="#">즐길거리</a>
+            <a href="#">음식점</a>
+            <a href="#">항공권</a>
+            <a href="#">항공+호텔 패키지</a>
+            <a href="#">크루즈</a>
+            <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+        </nav>
+    </div>
+
+    <!-- 회원 페이지 세부 내용들 시작 부분 중 스타일 -->
+    <div class="user-page-content-style">
+        <!-- 
+            회원 페이지 유저 정보 상단 부분 중 스타일
+            로그인 아이디에 따라 화면 변경 부분 만들기
+        -->
+        <div class="user-info-container-style">
+            <div class="user-info-container-layout">
+                <div class="user-info-left-part">
+                    <div class="user-container-image">
+                        <span class="user-info-image">
+                            <img src="../TeamProject-tripadvisor/image/user.png" alt="프로필 이미지">
+                        </span>
+                    </div>
+                    <div class="user-nickname">
+                        닉네임
+                    </div>
+                    <div class="user-container-PFF">
+                        <div>
+                            포스팅
+                            <br>
+                            <a href="#">1,926</a>
+                        </div>
+                        <div>
+                            팔로워
+                            <br>
+                            <a href="#">10</a>
+                        </div>
+                        <div>
+                            팔로잉
+                            <br>
+                            <a href="#">10</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-info-right-part">
+                    <button class="follow-button">
+                        <i class="fa-regular fa-user"></i> 팔로우
+                    </button>
+                    <button class="comment-button">
+                        <i class="fa-regular fa-comments"></i>
+                    </button>
+                    <button class="vesides-button">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 회원 페이지 세부 내용 하단 메뉴 시작 부분 -->
+        <div class="user-page-content-bottom-style">
+            <div class="user-page-content-bottom-layout">
+                <a href="#">활동 피드</a>
+                <a href="#">사진</a>
+                <a href="#">리뷰</a>
+                <a href="#">배지</a>
+                <a href="#">여행지도</a>
+            </div>
+        </div>
+
+        <!-- 회원 페이지 소개글과 리뷰 시작 부분 -->
+
+        <div class="user-page-review-colums-style">
+            <div class="user-page-review-colums-layout">
+                <div class="user-page-review-colums1">
+                    <div>소개</div>
+                    <span><i class="fa-solid fa-location-dot"></i> 위치</span>
+                    <span><i class="fa-regular fa-calendar-days"></i> 가입일</span>
+                    <span><i class="fa-regular fa-envelope"></i> 이메일</span>
+                </div>
+                <div class="user-page-review-colums2">
+                    <div class="user-page-review-header-style">
+                        <div class="user-page-review-header-layout">
+                            <a href="#" class="review-user-image"><img src="../TeamProject-tripadvisor/image/user.png" alt="프로필 이미지"></a>
+                            <div class="review-user-info-layout">
+                                <span class="review-user-nickname"><a href="#">글쓴 유저 닉네임</a>님이 리뷰를 작성했습니다.</span>
+                                <a href="#" class="review-user-dday">
+                                    0000년 0월
+                                </a>
+                            </div>
+                        </div>
+                        <div><i class="fa-solid fa-ellipsis"></i></div>
+                    </div>
+                    <div>별점</div>
+                    <div>리뷰 제목</div>
+                    <div>리뷰 내용</div>
+                    <div>숙박 날짜</div>
+                    <div>위치 정보</div>
+                    <div>좋아요 저장 공유</div>
+                </div>
+                <div class="user-page-review-colums3"></div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
+

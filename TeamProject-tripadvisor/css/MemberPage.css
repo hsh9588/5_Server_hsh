@@ -1,78 +1,244 @@
-/* 공용 바디 설정값 */
-body{
-    width: 1200px;
-    margin: auto;
-    height: 200vh;
-    background-color: gray;
-}
-
-
-/* 네비게이션 메뉴 설정값 */
-
-nav{
-    height: 42px;
-    display: flex;
+.user-header-bottom-style{
     margin: 0;
-    padding: 0 24px;
-
-    top: 0;
+    padding: 0;
+    height: 42px;
     background-color: white;
 }
 
-nav > ul{
+.user-header-bottom-layout{
+    height: 100%;
+    display: flex;
+
+    justify-content: flex-start;
+}
+
+.user-header-bottom-layout a{
+    padding: 0 12px;
+    height: 100%;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+}
+
+.user-header-bottom-layout i{
+    font-size: 26px;
+}
+
+.user-header-bottom-layout a:hover{
+    color: green;
+}
+
+.user-page-content-style{
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    list-style: none;
+    background-color: transparent;
+}
+
+.user-info-container-style{
+    height: 186px;
+    margin: auto;
+    padding-top: 24px;
+}
+
+.user-info-container-layout{
+    height: 162px;
+    padding: 24px 24px 0 24px;
+    
+    background-color: white;
 
     display: flex;
+}
+
+.user-info-left-part{
     height: 100%;
-}
+    width: 85%;
 
-nav  span{
-    font-size: 26px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
-nav li, nav  span{
-    padding: 0 12px;
+.user-info-image img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 12px;
 }
 
-nav li > a{
-    text-decoration: none;
+.user-nickname{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.user-container-PFF{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.user-container-PFF div{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 3px;
+    margin-right: 48px;
+}
+
+.user-container-PFF a{
+    font-size: 22px;
+}
+
+.user-container-PFF a:hover{
+    text-decoration: underline;
+}
+
+.user-info-right-part{
+    width: 15%;
+    display: flex;
+    height: 40px;
+}
+
+.user-info-right-part button:first-child{
+    width: 60%;
+}
+
+.comment-button, .vesides-button{
+    width: 20%;
+}
+
+.user-info-right-part button{
     font-size: 14px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 42px;
-}
-
-nav li > a:hover{
-    color: green;
-}
-
-nav  span:hover{
-    color: green;
+    font-weight: bold;
+    border: 1px solid #e2e2e2;
+    background-color: white;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-/* 회원 정보 페이지*/
-
-.profile-page{
-    height: 2000px;
-    background-color: coral;
-}
-
-.profile-page > div{
-    height: 138px;
-    margin: 0;
-    background-color: gray;
-    padding: 24px 24px 0 24px;
-}
-
-.profile-page-container > div{
-    height: 126px;
+.BC-style{
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: white;
-    bottom: 0;
+    height: 107px;
+    width: 100%;
+    z-index: -1;
+}
+
+.user-page-content-bottom-style{
+    height: 42px;
+    background-color: white;
+}
+
+.user-page-content-bottom-layout{
+    display: flex;
+    height: 100%;
+    margin: 0 8px;
+}
+
+.user-page-content-bottom-layout a{
+    padding: 0 12px;
+    height: 100%;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+}
+
+.user-page-content-bottom-layout a:focus-within{
+    font-weight: bold;
+    border-bottom: 2px solid #009f5e;
+}
+
+.user-page-review-colums-style{
+    margin-top: 24px;
+}
+
+.user-page-review-colums-layout{
+    display: flex;
+    align-items: flex-start;
+}
+
+.user-page-review-colums1{
+    background-color: white;
+    padding: 24px;
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.user-page-review-colums1 div{
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.user-page-review-colums1 span{
+    margin-top: 12px;
+    margin-left: 12px;
+    font-size: 14px;
+}
+
+.user-page-review-colums2{
+    background-color: white;
+    margin: 0 24px;
+    width: 50%;
+}
+
+.user-page-review-header-style{
+    display: flex;
+    align-items: center;
+    height: 61px;
+    margin-bottom: 12px;
+}
+
+.user-page-review-header-layout{
+    padding: 0 24px;
+    padding-top: 16px;
+    display: flex;
+    width: 90%;
+}
+
+.user-page-review-header-style > div:last-child{
+    width: 10%;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.user-page-review-header-style > div:last-child:hover{
+    cursor: pointer;
+}
+
+.user-page-review-header-layout img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+
+    margin-right: 8px;
+}
+
+.review-user-info-layout{
+    display: flex;
+    flex-direction: column;
+}
+
+.review-user-image{
+    font-size: 14px;
+}
+
+.review-user-dday{
+    font-size: 12px;
+}
+
+.review-user-nickname a{
+    font-weight: bold;
+}
+
+.review-user-nickname a:hover{
+    text-decoration: underline;
 }

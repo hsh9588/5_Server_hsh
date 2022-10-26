@@ -13,23 +13,22 @@ header, main, footer, div, span, article, a, form {
 }
 
 body {
-    /* width: 1200px; */
+    /* width: 1300px; */
     /* padding: 0px 100px; */
-    /* height: auto; */
-    /* margin: 0 auto; */
+    height: auto;
+    margin: auto;
+    height: 300vh;
+    background-color: #dddddd;
 }
 /************************* header *************************/
 header {
-    margin: 0 auto;
-    width: 1200px;
-    /* position: sticky;
-    top: 0; */
+    top: 0;
     display: flex;
     justify-content: space-between;
     height: 65px;
     background-color: white;
     z-index: 1000;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
 }
 
 header > .left-column {

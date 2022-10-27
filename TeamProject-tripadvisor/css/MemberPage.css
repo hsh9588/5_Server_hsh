@@ -122,7 +122,7 @@
     background-color: white;
     height: 107px;
     width: 100%;
-    z-index: -10;
+    z-index: -1;
 }
 
 .user-page-content-bottom-style{
@@ -313,10 +313,6 @@ F
 .user-page-content-bottom-style{
     position: sticky;
     top: 0px;
-}
-
-.temp-web{
-    background-color: #ddd;
 }
 
 .review-navi-style{

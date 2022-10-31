@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    /* color: black; */
+}
+header, main, footer, div, span, article, a, form {
+    border: 1px solid black;
+}
+
+body {
+    width: 1200px;
+    margin: auto;
+    height: 200vh;
+}
+
+.place{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    border: 1px solid red;
+    margin-bottom: 30px;
+}
+
+.img-area>div{
+    display: flex;
+    width: 50%;
+}
+
+.subimg-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    height: 50%;
+}
+.col{
+    width: 50%;
+}
+
+.row>a{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 450px;
+    text-decoration: none;
+    padding: 10px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.row>a:hover{
+    background-color: #ccc;
+}
+
+.intro-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-area>div{
+    height: 100%;
+    width: 70%;   
+}
+
+.intro{
+    padding: 10px;
+}
+
+.placeName{
+    margin: 10p;
+    width: 70%;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.review-area{
+    display: flex;
+    height: 600px;
+}
+
+.reviewRate{
+    width: 30%;
+}
+
+.reviewAll{
+    width: 70%;
+    height: 40%;
+}
+
+.profile-area{
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+
+.reviewContent{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 80%;
+}
+
+.review-search{
+    height: 20%;
+    display: flex;
+    padding: 10px;
+}
+
+.review-search>input{
+    flex:1;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.review-search>button{
+    width: 20%;
+}
+
+.profile-img{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.map-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map{
+    width: 80%;
+    height: 80%;
+}
+
+.map-area>span{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 150px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.map-area>span:hover{
+    background-color: #ccc;
+}
+
+.new-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.new-area2{
+    display: flex;
+}

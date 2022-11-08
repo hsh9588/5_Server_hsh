@@ -41,7 +41,7 @@ header {
     height: 65px;
     background-color: white;
     z-index: 1000;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
 }
 
 header > .left-column {

@@ -194,6 +194,7 @@ main {
     width: 100%;
     margin-bottom: 12px;
     padding-bottom: 10px;
+    position: relative;
 }
 
 .user-page-review-header-style{
@@ -210,13 +211,16 @@ main {
     width: 90%;
 }
 
-.user-page-review-header-style > div:last-child{
+.user-page-review-dot-style{
+    padding-left: 24px;
     width: 10%;
     font-weight: bold;
     font-size: 24px;
+    position: absolute;
+    right: 10px;
 }
 
-.user-page-review-header-style > div:last-child:hover,
+.user-page-review-dot-style:hover,
 .review-bottom-menu-style div, .review-navi-left div, 
 .review-navi-right i{
     cursor: pointer;
@@ -396,6 +400,11 @@ main {
     .user-page-review-colums1, .user-page-review-colums3{
         display: none;
     }
+
+    .user-page-review-dot-style{
+        position: absolute;
+        right: 10px;
+    }
 }
 
 /* 사진 슬라이드 CSS */
@@ -465,3 +474,26 @@ to {opacity: 1}
 from {opacity: .4} 
 to {opacity: 1}
 } 
+
+/* 리뷰 닷 다운 메뉴 */
+
+.user-page-review-dot-down-menu{
+    display: inline-block;
+    /* border: 1px solid black; */
+    width: 100px;
+    position: relative;
+    top: 40px;
+    right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 10px 1px;
+    background: white;
+    border-radius: 10%;
+    padding: 5px;
+    text-align: center;
+    /* display: none; */
+    z-index: 1;
+}
+
+.user-page-review-dot-down-menu li:hover{
+    background-color: #ddd;
+    border-radius: 15px;
+}

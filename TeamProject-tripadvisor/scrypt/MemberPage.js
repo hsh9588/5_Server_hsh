@@ -71,10 +71,22 @@ for(let item of suportbutton){
 
 // 비동기 리뷰 테이블 작성
 const div_P = document.createElement("div");
+div_P.className.add("user-page-review-colums2");
 
 const div_Cdiv1 = document.createElement("div");
+div_Cdiv1.className.add("user-page-review-header-style");
 
 const div_Cdiv1_Cdiv1 = document.createElement("div");
+div_Cdiv1_Cdiv1.className.add("user-page-review-header-layout");
+
+const div_Cdiv1_Cdiv1_Ca1 = document.createElement("a");
+div_Cdiv1_Cdiv1_Ca1.className.add("review-user-image");
+
+const div_Cdiv1_Cdiv1_Cdiv1 = document.createElement("div");
+
+const div_Cdiv1_Cdiv1_Cdiv1_Cspan1 = document.createElement("span");
+const div_Cdiv1_Cdiv1_Cdiv1_Ca1 = document.createElement("a");
+
 const div_Cdiv1_Cdiv2 = document.createElement("div");
 const div_Cdiv1_Cdiv3 = document.createElement("div");
 
@@ -94,3 +106,8 @@ const div_Cdiv4_Cdiv1 = document.createElement("div");
 const div_Cdiv4_Cdiv2 = document.createElement("div");
 const div_Cdiv4_Cdiv3 = document.createElement("div");
 
+// 실패 이름 너무 구림
+
+// 재시도 비동기 리뷰 테이블 작성 작명
+
+const reviewColums2_dt = document.createElement("div");

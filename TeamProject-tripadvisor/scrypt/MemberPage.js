@@ -68,3 +68,29 @@ for(let item of suportbutton){
     });
 
 }
+
+// 비동기 리뷰 테이블 작성
+const div_P = document.createElement("div");
+
+const div_Cdiv1 = document.createElement("div");
+
+const div_Cdiv1_Cdiv1 = document.createElement("div");
+const div_Cdiv1_Cdiv2 = document.createElement("div");
+const div_Cdiv1_Cdiv3 = document.createElement("div");
+
+const div_Cdiv2 = document.createElement("div");
+
+const div_Cdiv2_Cdiv1 = document.createElement("div");
+const div_Cdiv2_Cdiv2 = document.createElement("div");
+const div_Cdiv2_Cdiv3 = document.createElement("div");
+
+const div_Cdiv3 = document.createElement("div");
+
+const div_Cdiv3_Cdiv1 = document.createElement("div");
+
+const div_Cdiv4 = document.createElement("div");
+
+const div_Cdiv4_Cdiv1 = document.createElement("div");
+const div_Cdiv4_Cdiv2 = document.createElement("div");
+const div_Cdiv4_Cdiv3 = document.createElement("div");
+

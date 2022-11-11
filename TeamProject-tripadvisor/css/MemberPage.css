@@ -504,3 +504,41 @@ to {opacity: 1}
     background-color: #ddd;
     border-radius: 15px;
 }
+
+/* 리뷰 작성 아무것도 안했을 때 나오는 화면 */
+.user-page-review-none-content{
+    padding: 48px 60px;
+}
+
+.none-content-titel{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.none-content{
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.none-content-review-create{
+    text-align: center;
+    font-size: 14px;
+}
+
+.none-content-review-create:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.none-content-review-create:hover i{
+    color: black;
+}
+
+.none-content-review-create i{
+    margin-right: 10px;
+    font-size: 20px;
+    color: gray;
+}

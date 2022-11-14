@@ -2,7 +2,7 @@ function show(){
     document.querySelector(".profile-page-background").className = "profile-page-popup profile-edit";
 }
 
-function close() {
+function close(){
     document.querySelector(".profile-page-background").className = "profile-page-popup";
 }
 

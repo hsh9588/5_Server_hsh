@@ -6,30 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="https://kit.fontawesome.com/313744e228.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/test.css">
-    
 </head>
 <body>
 
-    <form class="mb-3" name="myform" id="myform" method="post">
-        <fieldset>
-            <span class="text-bold">별점을 선택해주세요</span>
-            <input type="radio" name="reviewStar" value="5" id="rate1"><label
-                for="rate1">★</label>
-            <input type="radio" name="reviewStar" value="4" id="rate2"><label
-                for="rate2">★</label>
-            <input type="radio" name="reviewStar" value="3" id="rate3"><label
-                for="rate3">★</label>
-            <input type="radio" name="reviewStar" value="2" id="rate4"><label
-                for="rate4">★</label>
-            <input type="radio" name="reviewStar" value="1" id="rate5"><label
-                for="rate5">★</label>
-        </fieldset>
-        <div>
-            <textarea class="col-auto form-control" type="text" id="reviewContents">
-                
-            </textarea>
+    <button id="profile-edit-show">프로필 수정</button>
+
+        <div class="profile-page-background">
+            <div class="profilr-page-window">
+                <div class="profile-page-popup">
+                    <div class="profile-image-edit">
+                        <img src="../../image/user.png" alt="">
+                        <button><i class="fa-regular fa-image"></i> 프로필 사진 변경하기</button>
+                    </div>
+                    <div class="profile-edit">
+                        <!-- 이름 입력 -->
+                        <label for="profile-inputName">이름</label>
+        
+                        <div class="profile-input-area">
+                            <input type="text" id="profile-inputName" placeholder="이름" maxlength="30" 
+                                    autocomplete="off" required>
+                        </div>
+                        <div class="profile-edit-button">
+                            <button id="profile-edit-close">취소</button>
+                            <button>저장</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>		
+    </div>
+
+    <script src="../js/test.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -6,90 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원페이지</title>
 
-    <link rel="stylesheet" href="css/MemberPage.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/resources/css/inc/header.css">
+    <link rel="stylesheet" href="/resources/css/main-style.css">
+    <link rel="stylesheet" href="/resources/css/inc/footer.css">
+    <link rel="stylesheet" href="/resources/css/swiper.min.css">
+    <%-- MemberPage link 요청해야 함 --%>
 
     
     <script src="https://kit.fontawesome.com/313744e228.js" crossorigin="anonymous"></script>
-    <script src="../TeamProject-tripadvisor/scrypt/header-search.js"></script>
     
 </head>
 <body>
-    <header>
-        <!-- <div class="BC-style"></div> -->
-        <div class="left-column">
-            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="" width="200px">
-        </div>
-        
-        <div class="header-search">
-            <form action="#" class="search-form">
-                <div class="search-input-box">
-                    <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
-                    <input id="search-input" type="search" placeholder="어디로 가시나요?" name="searchKeyword" autocomplete="off">
-                </div>
-                <div class="search-keyword-area">
-                    <a href="#">
-                        <i class="fa-solid fa-location-arrow"></i>
-                        <span>주변</span>
-                    </a>
-                    <label class="search-keyword-title">인기 검색어</label>
-                    <ol class="popular-keyword-list">
-                        <!-- <a href="">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>라스베이거스</span>
-                        </a>
-                        <hr>
-                        <a href="">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>서울</span>
-                        </a>
-                        <hr>
-                        <a href="">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>동대문</span>
-                        </a>
-                        <hr>
-                        <a href="">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>부산 해운대</span>
-                        </a> -->
-                    </ol>
-                </div>
-            </form>
-        </div>
-        
-        
-        <div class="right-column">
-            <ul class="header-nav">
-                <li><a href="프로필페이지/리뷰"><i class="fa-solid fa-pen"></i>리뷰</a></li>
-                <li><a href="#"><i class="fa-solid fa-bell"></i>알림</a></li>
-            </ul>
-            
-            <!-- 로그아웃 상태라면 -->
-            <!-- <a href="로그인 페이지로 이동" class="header-login">로그인</a> -->
-            
-            <!-- 로그인 상태라면 -->
-            <div class="profile-img">
-                <label for="header-menu-toggle">
-                    <img src="../TeamProject-tripadvisor/image/star.png" alt="프로필 이미지">
-                </label>
-                <input type="checkbox" id="header-menu-toggle">
-                <div class="top-down-menu">
-                    <ul>
-                        <li><a href="내정보 확인 이동">내 정보</a></li>
-                        <li><a href="프로필 페이지 이동">마이 프로필</a></li>
-                        <li><a href="로그아웃페이지 이동">로그아웃</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+    <%-- header:include --%>
+    <jsp:include page="/WEB-INF/views/inc/header.jsp"></jsp:include>
     
     <div class="blur-box"></div>
     
     <main>
-       <!--  <div class="user-header-bottom-style">
+        <div class="user-header-bottom-style">
             <nav class="user-header-bottom-layout">
                 <a href="#">호텔</a>
                 <a href="#">즐길거리</a>
@@ -99,7 +35,7 @@
                 <a href="#">크루즈</a>
                 <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
             </nav>
-        </div -->>
+        </div>
 
         <!-- 회원 정보 페이지 검색창 하단 메뉴 시작 부분 -->
         <div class="temp-web">
@@ -393,25 +329,12 @@
         </div>
     </main>
 
-    <footer>
-        <section>
-            <div class="footer-logo">
-                <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="">
-            </div>
-            <div class="footer-content">
-                <span>© 2022 Tripadvisor LLC All rights reserved.</span>
-                <ul class="footer-nav">
-                    <li><a href="이용 약관">이용 약관</a></li>
-                    <li><a href="개인정보 수집 및 이용약관">개인정보 수집 및 이용 약관</a></li>
-                    <li><a href="문의하기">문의하기</a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="footer-explanation">
-            <p>KH 정보교육원 교육과정 중 중간프로젝트 트립어드바이저 클론버전 입니다. </p>
-        </section>
-    </footer>
-    <script src="../TeamProject-tripadvisor/scrypt/MemberPage.js"></script>
+    <%-- footer:include --%>
+    <jsp:include page="/WEB-INF/views/inc/footer.jsp"></jsp:include>
+
+    <script src="/resources/js/main.js"></script>
+    <script src="/resources/js/swiper.min.js"></script>
+    <%-- memberPage scrypt 해야 함 --%>
 </body>
 </html>
 

@@ -137,6 +137,8 @@ main {
     height: 42px;
     top: 0px;
     background-color: white;
+    position: sticky;
+    
 }
 
 .user-page-content-bottom-layout{

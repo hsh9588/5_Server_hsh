@@ -1,3 +1,5 @@
+/* 슬라이드 js */
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -19,6 +21,8 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block"; 
 } 
+
+/*  */
 
 const dotmenu = document.getElementsByClassName("user-page-review-dot-style");
 

@@ -544,3 +544,26 @@ to {opacity: 1}
     font-size: 20px;
     color: gray;
 }
+
+
+/* 피드 */
+.user-page-fed-content{
+    display: flex;
+    padding: 24px;
+    align-items: center;
+}
+
+.user-page-fed-content a{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.user-page-fed-content div:hover{
+    text-decoration: underline;
+}
+
+.user-page-fed-content img{
+    margin-right: 10px;
+    width: 30px;
+}

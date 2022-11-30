@@ -83,5 +83,45 @@ WHERE FOLLOW_MEMBER_NO = 1) TOTAL_FOLLOWING
 FROM MEMBER
 WHERE MEMBER_NO = 1
 
-FROM sc
+-- 참고용
+--INSERT INTO BOARD_IMG
+--VALUES(SEQ_IMG_NO.NEXTVAL, '/resources/images/board/',
+--'20221116105843_00004.gif', '4.gif', 3 , 1000);
 
+SELECT * FROM REVIEW
+WHERE MEMBER_NO = 1;
+
+SELECT * FROM REVIEW_IMAGE;
+
+INSERT INTO REVIEW_IMAGE
+VALUES
+(SEQ_REVIEW_IMAGE_NO.NEXTVAL, 2, '/resources/images/profile/', DEFAULT, 0, 'hills123.jpg', 'hills.jpg');
+
+INSERT INTO REVIEW_IMAGE
+VALUES
+(SEQ_REVIEW_IMAGE_NO.NEXTVAL, 2, '/resources/images/profile/', DEFAULT, 1, 'alberta123.jpg', 'alberta.jpg');
+
+INSERT INTO REVIEW_IMAGE
+VALUES
+(SEQ_REVIEW_IMAGE_NO.NEXTVAL, 2, '/resources/images/profile/', DEFAULT, 2, 'avenue123.jpg', 'avenue.jpg');
+
+
+SELECT * FROM REVIEW_IMAGE
+WHERE REVIEW_NO = 3
+ORDER BY REVIEW_IMAGE_ORDER;
+	
+ROLLBACK;
+		
+COMMIT;
+
+INSERT INTO REVIEW_IMAGE
+VALUES
+(SEQ_REVIEW_IMAGE_NO.NEXTVAL, 4, '/resources/images/profile/', DEFAULT, 0, 'tree123.jpg', 'tree.jpg');
+
+INSERT INTO REVIEW_IMAGE
+VALUES
+(SEQ_REVIEW_IMAGE_NO.NEXTVAL, 4, '/resources/images/profile/', DEFAULT, 1, 'thunderstorm123.jpg', 'thunderstorm.jpg');
+
+INSERT INTO REVIEW_IMAGE
+VALUES
+(SEQ_REVIEW_IMAGE_NO.NEXTVAL, 4, '/resources/images/profile/', DEFAULT, 2, 'road123.jpg', 'road.jpg');

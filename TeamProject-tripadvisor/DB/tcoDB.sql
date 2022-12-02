@@ -30,8 +30,8 @@ END;
 /
 
 COMMIT;
-
 */
+
 
 -- 리뷰 리스트 조회시 필요한 컬럼
 -- 리뷰 제목, 리뷰 내용, 작성 날짜, 도움이됨 수, 위치 정보 제목, 
@@ -106,6 +106,18 @@ INSERT INTO REVIEW_IMAGE
 VALUES
 (SEQ_REVIEW_IMAGE_NO.NEXTVAL, 2, '/resources/images/profile/', DEFAULT, 2, 'avenue123.jpg', 'avenue.jpg');
 
+INSERT INTO REVIEW_IMAGE
+VALUES
+(SEQ_REVIEW_IMAGE_NO.NEXTVAL, 2, '/resources/images/profile/', DEFAULT, 3, 'tree123.jpg', 'tree.jpg');
+
+INSERT INTO REVIEW_IMAGE
+VALUES
+(SEQ_REVIEW_IMAGE_NO.NEXTVAL, 2, '/resources/images/profile/', DEFAULT, 4, 'thunderstorm123.jpg', 'thunderstorm.jpg');
+
+INSERT INTO REVIEW_IMAGE
+VALUES
+(SEQ_REVIEW_IMAGE_NO.NEXTVAL, 2, '/resources/images/profile/', DEFAULT, 5, 'road123.jpg', 'road.jpg');
+
 
 SELECT * FROM REVIEW_IMAGE
 WHERE REVIEW_NO = 3
@@ -114,6 +126,7 @@ ORDER BY REVIEW_IMAGE_ORDER;
 ROLLBACK;
 		
 COMMIT;
+
 
 INSERT INTO REVIEW_IMAGE
 VALUES

@@ -468,11 +468,11 @@ main {
 .follow-user-button:hover{
     background-color: #ddd;
 }
-/* 
+
 .modal-layout{
     display: none;
 }
- */
+
 /* 미디어쿼리 화면 반응형 */
 @media (max-width: 1024px){
 
@@ -651,3 +651,31 @@ to {opacity: 1}
     margin-right: 10px;
     width: 30px;
 }
+
+/* 더보기 버튼 스타일 */
+.more-button{
+    display: flex;
+    margin: auto;
+    position: absolute;
+    right: 47%;
+    border: none;
+    background: black;
+    color: white;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.more-button i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.more-button:hover{
+    transform: scale(1.1);
+}
+
